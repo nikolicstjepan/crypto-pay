@@ -1,0 +1,15 @@
+export const START_LOADING = "START_LOADING";
+export const FINISH_LOADING = "FINISH_LOADING";
+
+export const SET_CRYPTO_LIST = "SET_CRYPTO_LIST";
+export const SELECT_CRYPTO = "SELECT_CRYPTO";
+
+export const SET_PROMO_LIST = "SET_PROMO_LIST";
+export const SELECT_PROMO = "SELECT_PROMO";
+
+export const SET_WALLET_ID = "SET_WALLET_ID";
+export const SET_TRANSACTION = "SET_TRANSACTION";
+
+export const NEXT_STEP = "NEXT_STEP";
+export const PREVIOUS_STEP = "PREVIOUS_STEP";
+export const CHANGE_STEP = "CHANGE_STEP";
