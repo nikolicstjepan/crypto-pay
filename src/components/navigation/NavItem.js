@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import BaseIcon from "../shared/BaseIcon";
 
-const Icon = styled(BaseIcon)`
+const NavIcon = styled(BaseIcon)`
   background: url(${(props) => props.icon}) no-repeat center center;
 `;
 
@@ -39,12 +39,12 @@ const NavAction = styled.div`
   cursor: pointer;
 `;
 
-function NavItem({ text, icon, onClick }) {
+function NavItem({ text, icon, step, onClick }) {
   return (
     <NavItemWrapper>
-      <Icon icon={icon} />
+      <NavIcon icon={icon} />
       <NavText>{text}</NavText>
-      <NavAction onClick={onClick}>Change</NavAction>
+      <NavAction onClick={() => onClick(step)}>Change</NavAction>
     </NavItemWrapper>
   );
 }
@@ -66,5 +66,7 @@ NavAction.defaultProps = {
     lightBlue: PropTypes.string.isRequired,
   }).isRequired,
 };
+
+export { NavIcon, NavText, NavAction };
 
 export default NavItem;

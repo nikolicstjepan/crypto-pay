@@ -13,7 +13,7 @@ function Navigation({ navList, onClick }) {
   return (
     <NavigationWrapper>
       {navList.map((item, i) => (
-        <NavItem key={i} {...item} onClick={() => onClick(item.step)} />
+        <NavItem key={i} {...item} onClick={onClick} />
       ))}
     </NavigationWrapper>
   );
