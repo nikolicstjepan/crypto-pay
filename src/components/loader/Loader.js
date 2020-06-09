@@ -70,4 +70,5 @@ LoaderBody.defaultProps = {
   }).isRequired,
 };
 
+export { LoaderBody, LoaderWrapper };
 export default Loader;
