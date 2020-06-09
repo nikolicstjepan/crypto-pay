@@ -58,4 +58,5 @@ Option.propTypes = {
   id: PropTypes.number.isRequired,
 };
 
+export { OptionWrapper, OptionIcon, OptionText };
 export default Option;

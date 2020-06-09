@@ -45,4 +45,6 @@ OptionList.propTypes = {
   fetchOptions: PropTypes.func.isRequired,
 };
 
+export { Title };
+
 export default OptionList;
